@@ -8,29 +8,79 @@
     <title>Portofolio 1.0</title>
   </head>
   <body>
-    <h1>My Personal Portofolio</h1>
-    <p>Hello, my name is Ionut &#128512</p>
-    <div>
-      
-        <ul>HTML</ul>
-        <ol>CSS</ol>
-        <ol>TypeScrypt/JavaScript</ol>
-        <ol>Angular</ol>
-        <ol>Node.JS</ol>
-        <ol>ASP.NET Core C#</ol>
-        <ul>Microsoft SQL</ul>
-      
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img
+            src="images/12347886_889006984529551_1312621613248739162_n.jpg "
+            class="logo"
+            alt="A logo picture."
+          />
+
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Me</a></li>
+            <li><a href="">Projects</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hello,<br />
+            my name is Ionuț-Antoniu <span>Gherlan</span>
+          </h1>
+          <audio
+            controls
+            autoplay
+            src="media/welcome-traveler-97167.mp3"
+          ></audio>
+        </div>
+      </div>
     </div>
 
-    <img src="images/portofimg.jpg" alt="Profile pic" />
-    <audio controls autoplay>
-      <source src="media/welcome-traveler-97167.mp3" type="audio/ogg">
-      <source src="media/welcome-traveler-97167.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-    <footer>
-      LinkedIn : https://ro.linkedin.com/in/gherlan-ionu%C8%9B-antoniu-40a567198
-      Copyrights© Gherlan Ionut Antoniu
-    </footer>
+    <!--ABOUT-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img
+              src="images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg"
+              alt="Working on computer."
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I want to become a Fullstack Web Developer and to learn about the
+              new technologies within a great company and surrounded by great
+              people.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link">Skills</p>
+              <p class="tab-links">Experience</p>
+              <p class="tab-links">Education</p>
+            </div>
+            <div class="tab-contents">
+              <ul>
+                <li>
+                  <span>Frontend Developer</span> <br />
+                  HTML5 and CSS3 with JavaScript/TypeScript in Angular
+                </li>
+                <li>
+                  <span>Backend Developer</span> <br />
+                  ASP.NET Core with MVC and Entity Framework <br />
+                  Microsoft SQL Server and SSMS
+                </li>
+                <li>
+                  <span>Other Skills</span> <br />
+                  Github and Github Desktop <br />
+                  Postman for testing
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
