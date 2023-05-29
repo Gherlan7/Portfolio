@@ -12,13 +12,13 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/blake-connally-IKUYGCFmfw4-unsplash.jpg);
+  background-image: url(images/background.jpg);
   background-size: cover;
   background-position: center;
 }
 
 .container {
-  padding: 20px 2%;
+  padding: 60px 3%;
 }
 
 nav {
@@ -29,7 +29,7 @@ nav {
 }
 
 .logo {
-  width: 150px;
+  width: 170px;
   border-radius: 50%;
 }
 
@@ -69,6 +69,9 @@ nav ul li a:hover::after {
 
 .header-text span {
   color: hwb(240 58% 17%);
+}
+#audio {
+  display: none;
 }
 /*----ABOUT----*/
 #about {
@@ -136,4 +139,80 @@ nav ul li a:hover::after {
   margin-bottom: 5px;
   display: inline-block;
   font-size: 16px;
+}
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+/*--PROJECTS--*/
+#projects {
+  padding: 50px 0;
+}
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+.work {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.layer {
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10px;
+  text-align: center;
+  font-size: 16px;
+  transition: height 0.5s;
+}
+
+.layer h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.layer a {
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+.work:hover .layer {
+  height: 100%;
 }

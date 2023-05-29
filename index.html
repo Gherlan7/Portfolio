@@ -5,17 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="index.js"></script>
     <title>Portofolio 1.0</title>
   </head>
   <body>
     <div id="header">
       <div class="container">
         <nav>
-          <img
-            src="images/12347886_889006984529551_1312621613248739162_n.jpg "
-            class="logo"
-            alt="A logo picture."
-          />
+          <img src="images/logo.jpg" class="logo" alt="A logo picture." />
 
           <ul>
             <li><a href="">Home</a></li>
@@ -29,10 +31,12 @@
             Hello,<br />
             my name is Ionuț-Antoniu <span>Gherlan</span>
           </h1>
+
           <audio
             controls
             autoplay
             src="media/welcome-traveler-97167.mp3"
+            id="audio"
           ></audio>
         </div>
       </div>
@@ -43,10 +47,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img
-              src="images/jefferson-santos-9SoCnyQmkzI-unsplash.jpg"
-              alt="Working on computer."
-            />
+            <img src="images/dualdesktop.jpg" alt="Working on computer." />
           </div>
           <div class="about-col-2">
             <h1 class="subtitle">About Me</h1>
@@ -56,11 +57,15 @@
               people.
             </p>
             <div class="tab-titles">
-              <p class="tab-links active-link">Skills</p>
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Education</p>
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
             </div>
-            <div class="tab-contents">
+            <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
                   <span>Frontend Developer</span> <br />
@@ -74,7 +79,43 @@
                 <li>
                   <span>Other Skills</span> <br />
                   Github and Github Desktop <br />
-                  Postman for testing
+                  Postman and DevTools for testing
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>04/2021 – 06/2021</span> <br />
+                  Frontend Web Developer
+                </li>
+                <li>
+                  <span>02/2018 – 04/2018</span> <br />
+                  Entrant at a Hella Workshop
+                </li>
+                <li>
+                  <span>11/2016 – 05/2022 </span> <br />
+                  Diverse personal projects
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>10/2015 – 05/2020</span> <br />
+                  Bachelor's Degree in Computer Science and Engineering on
+                  Faculty of Automatics <br />
+                  Computers and Electronics, Craiova, Romania <br />
+                  Department : Computer Science, English Section
+                </li>
+                <li>
+                  <span>09/2011 – 06/2015</span> <br />
+                  “Carol I” National College, Craiova, Romania <br />
+                  Profile : Mathematics – Informatics
+                </li>
+                <li>
+                  <span>03/2021 - 04/2023</span> <br />
+                  Following and complete diverse programming tutorials.
                 </li>
               </ul>
             </div>
@@ -82,5 +123,36 @@
         </div>
       </div>
     </div>
+    <!--PROJECTS-->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Project1.png" alt="First project." />
+            <div class="layer">
+              <h2>Fullstack Application</h2>
+              <p>
+                Web API application with CRUD operation where you can access a
+                database.
+              </p>
+              <a href="#"><img src="images/link.png" alt="code icon" /></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Project2.png" alt="First project." />
+            <div class="layer">
+              <h2>Calculator in C#</h2>
+              <p>
+                Console application in Microsoft Visual Studio that can perform
+                operations on two numbers.
+              </p>
+              <a href="#"><img src="images/link.png" alt="code icon" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CONTACT-->
   </body>
 </html>
