@@ -134,7 +134,7 @@
                 Web API application with CRUD operation where you can access a
                 database.
               </p>
-              <a href="#"><img src="images/link.png" alt="code icon" /></a>
+              <a href=""><img src="images/link.png" alt="code icon" /></a>
             </div>
           </div>
           <div class="work">
@@ -145,7 +145,9 @@
                 Console application in Microsoft Visual Studio that can perform
                 operations on two numbers.
               </p>
-              <a href="#"><img src="images/link.png" alt="code icon" /></a>
+              <a href="https://github.com/Gherlan7/Calculator"
+                ><img src="images/link.png" alt="code icon"
+              /></a>
             </div>
           </div>
         </div>
@@ -194,7 +196,20 @@
           </div>
         </div>
       </div>
-      <div class="copyright">Copyright © Gherlan Ionuț-Antoniu</div>
+      <div class="copyright"><p>Copyright © Gherlan Ionuț-Antoniu</p></div>
     </div>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxioeE--ZwYj5GAmFfSQGjPijfZYDZL-tCzT44Z_szS_QApTPO3QVFho6Rq5H7662Mj/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
