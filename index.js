@@ -13,7 +13,7 @@ function opentab(tabname) {
 }
 
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbyTeh4YH4S_G7bIadXh5TR7ljOWLvNQxpT8jAw726kUvPc6gxKDZjC1pYq-SZzG5X0j/exec";
+  "https://script.google.com/macros/s/AKfycbz1kMuKAo6MiROPiI2HPx6tLtX0XyJeQe2JqE2VQOD1R1ZvQ3FnghuaOWGauBjVLh_vMg/exec";
 const form = document.forms["submit-to-google-sheet"];
 
 form.addEventListener("submit", (e) => {
