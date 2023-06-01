@@ -106,6 +106,10 @@ nav ul li a:hover::after {
   color: #fff;
 }
 
+.about-col-2 p {
+  font-size: 18px;
+}
+
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
@@ -300,6 +304,7 @@ form .btn2 {
   padding: 14px 60px;
   font-size: 18px;
   margin-top: 20px;
+  margin-left: 30px;
   cursor: pointer;
 }
 .copyright {
@@ -352,5 +357,8 @@ form .btn2 {
   }
   .layer {
     font-size: 14px;
+  }
+  .contact-right.btn.btn2 {
+    margin: auto;
   }
 }
