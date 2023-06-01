@@ -1,13 +1,218 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>SuperHeroUI</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <app-root></app-root>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script src="index.js"></script>
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.jpg" class="logo" alt="A logo picture." />
+
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hello &#128075;<br />
+            my name is Ionuț Antoniu <span>Gherlan</span>
+          </h1>
+
+          <audio
+            controls
+            autoplay
+            src="media/welcome-traveler-97167.mp3"
+            id="audio"
+          ></audio>
+        </div>
+      </div>
+    </div>
+
+    <!--ABOUT-->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/dualdesktop.jpg" alt="Working on computer." />
+          </div>
+          <div class="about-col-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I want to become a Fullstack Web Developer and to learn about the
+              new technologies within a great company and surrounded by great
+              people.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Frontend Developer</span> <br />
+                  HTML5 and CSS3 with JavaScript/TypeScript in Angular
+                </li>
+                <li>
+                  <span>Backend Developer</span> <br />
+                  ASP.NET Core with MVC and Entity Framework <br />
+                  Microsoft SQL Server and SSMS
+                </li>
+                <li>
+                  <span>Other Skills</span> <br />
+                  Github and Github Desktop <br />
+                  Postman and DevTools for testing
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>04/2021 – 06/2021</span> <br />
+                  Frontend Web Developer
+                </li>
+                <li>
+                  <span>02/2018 – 04/2018</span> <br />
+                  Entrant at a Hella Workshop
+                </li>
+                <li>
+                  <span>11/2016 – 05/2022 </span> <br />
+                  Diverse personal projects
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>10/2015 – 05/2020</span> <br />
+                  Bachelor's Degree in Computer Science and Engineering on
+                  Faculty of Automatics <br />
+                  Computers and Electronics, Craiova, Romania <br />
+                  Department : Computer Science, English Section
+                </li>
+                <li>
+                  <span>09/2011 – 06/2015</span> <br />
+                  “Carol I” National College, Craiova, Romania <br />
+                  Profile : Mathematics – Informatics
+                </li>
+                <li>
+                  <span>03/2021 - 04/2023</span> <br />
+                  Following and complete diverse programming tutorials.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--PROJECTS-->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Main Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/Proiect1.png" alt="First project." />
+            <div class="layer">
+              <h2>Fullstack Application</h2>
+              <p>
+                Web API application with CRUD operation where you can access a
+                database.
+              </p>
+              <a href="https://github.com/Gherlan7/FullstackAPI"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Proiect2.png" alt="First project." />
+            <div class="layer">
+              <h2>Calculator in C#</h2>
+              <p>
+                Console application in Microsoft Visual Studio that can perform
+                operations on two numbers.
+              </p>
+              <a href="https://github.com/Gherlan7/Calculator"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">Back to the top</a>
+      </div>
+    </div>
+    <!--CONTACT-->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h3 class="subtitle">Contact Me</h3>
+            <p>
+              <i class="fas fa-envelope-open-text"></i>ionigherlan9@gmail.com
+            </p>
+            <p><i class="fas fa-phone-square-alt"></i> 0748392687</p>
+            <div class="social-icons">
+              <a
+                href="https://www.linkedin.com/in/gherlan-ionu%C8%9B-antoniu-40a567198/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Gherlan7"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+            <a href="media/Gherlan Ionut - CV.docx" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="E-mail"
+                placeholder="Your e-mail"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright"><p>Copyright © Gherlan Ionuț-Antoniu</p></div>
+    </div>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxioeE--ZwYj5GAmFfSQGjPijfZYDZL-tCzT44Z_szS_QApTPO3QVFho6Rq5H7662Mj/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
 </html>
