@@ -319,6 +319,7 @@ form .btn2 {
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(images/mobilebck.jpg);
+    background-size: 100% 100%;
   }
   .logo {
     max-width: 100px;
@@ -326,9 +327,11 @@ form .btn2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
   }
   nav ul li a {
     font-size: 19px;
+    margin: auto;
   }
   .contact-right,
   .contact-left {
