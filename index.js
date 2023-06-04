@@ -11,14 +11,3 @@ function opentab(tabname) {
   event.currentTarget.classList.add("active-link");
   document.getElementById(tabname).classList.add("active-tab");
 }
-
-const form = document.getElementById("submit-to-google-sheet");
-
-form.addEventListener("submit", function handleSubmit(event) {
-  event.preventDefault();
-
-  // 👇️ Send data to the server here
-
-  // 👇️ Reset the form here
-  form.reset();
-});
